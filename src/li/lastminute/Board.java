@@ -48,7 +48,7 @@ public class Board extends JPanel implements ActionListener {
     public Board() {
 
         addKeyListener(new TAdapter());
-        setBackground(Color.black);
+        setBackground(Color.white);
         setFocusable(true);
 
         setPreferredSize(new Dimension(B_WIDTH, B_HEIGHT));
@@ -118,7 +118,7 @@ public class Board extends JPanel implements ActionListener {
         Font small = new Font("Helvetica", Font.BOLD, 14);
         FontMetrics metr = getFontMetrics(small);
 
-        g.setColor(Color.white);
+        g.setColor(Color.darkGray);
         g.setFont(small);
         g.drawString(msg, (B_WIDTH - metr.stringWidth(msg)) / 2, B_HEIGHT / 2);
     }
